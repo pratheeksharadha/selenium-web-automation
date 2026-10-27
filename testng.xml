@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium Automation Suite">
+
+
+    <listeners>
+        <listener class-name="com.automation.utils.ExtentTestListener"/>
+    </listeners>
+
+    <test name="Web Application Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.CartTest"/>
+            <class name="tests.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>
