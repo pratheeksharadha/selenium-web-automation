@@ -4,6 +4,7 @@ package tests;
 import base.BaseTest;
 import com.automation.pages.LoginPage;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
@@ -62,7 +63,10 @@ public class LoginTest extends BaseTest {
         loginPage.open();
         loginPage.login(username, password);
 
+
         assertTrue(loginPage.isLoginErrorDisplayed());
+
+       // Assert.fail("Temporary failure to test screenshot capture");
     }
 
 }
